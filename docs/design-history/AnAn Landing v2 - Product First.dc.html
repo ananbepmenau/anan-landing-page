@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+<style>
+body{margin:0;font-family:'Be Vietnam Pro','Segoe UI',sans-serif;color:#333;background:#fff;line-height:1.6}
+a{text-decoration:none;color:inherit}
+a:hover{color:#A66B38}
+h1,h2,h3,h4{margin:0;color:#7A4B24;line-height:1.2}
+p{margin:0}
+img{max-width:100%;height:auto;display:block}
+button{font-family:'Be Vietnam Pro','Segoe UI',sans-serif;cursor:pointer}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-15px)}}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.45}}
+</style>
+</helmet>
+<div style="background:#fff;padding-bottom:84px">
+
+<div style="background:#2D4C3B;color:#fff;font-size:14px;display:flex;justify-content:center;flex-wrap:wrap;gap:8px 28px;padding:9px 24px;align-items:center">
+  <span style="display:flex;align-items:center;gap:7px"><span style="width:8px;height:8px;border-radius:50%;background:#8FD6A6;animation:pulse 1.8s ease-in-out infinite"></span> Lò đang nướng mẻ chiều nay</span>
+  <span style="display:flex;align-items:center;gap:7px"><i class="bx bx-time-five"></i> Chốt đơn giao 15:00–19:00 trước <strong>11:00</strong> sáng nay</span>
+  <a href="tel:0918103741" style="display:flex;align-items:center;gap:7px;color:#fff;font-weight:600"><i class="bx bxs-phone-call"></i> Zalo/SĐT 0918 103 741</a>
+</div>
+
+<nav style="position:sticky;top:0;width:100%;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);z-index:1000;padding:12px 0;border-bottom:1px solid rgba(0,0,0,.06)">
+  <div style="max-width:1200px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap">
+    <a href="#home" style="display:flex;align-items:center;gap:12px;line-height:1">
+      <img src="images/logo_v2.png" alt="AnAn - Bếp Mẹ Nấu" style="height:52px;width:auto;object-fit:contain;filter:drop-shadow(0 2px 4px rgba(0,0,0,.10))">
+      <span style="display:flex;flex-direction:column"><strong style="font-size:19px;color:#7A4B24;letter-spacing:.2px">AnAn - Bếp Mẹ Nấu</strong><span style="font-size:12.5px;color:#8a7a6c">Bánh bò thốt nốt nướng thủ công</span></span>
+    </a>
+    <div style="display:flex;gap:28px;flex-wrap:wrap;align-items:center">
+      <a href="#menu" style="font-weight:600;color:#7A4B24;font-size:16px">Sản phẩm</a>
+      <a href="#combo" style="font-weight:500;color:#333;font-size:16px">Combo &amp; Quà tặng</a>
+      <a href="#cam-ket" style="font-weight:500;color:#333;font-size:16px">Cam kết</a>
+      <a href="#khach-hang" style="font-weight:500;color:#333;font-size:16px">Đánh giá</a>
+      <a href="#story" style="font-weight:500;color:#333;font-size:16px">Câu chuyện</a>
+    </div>
+    <a href="#menu" style="display:inline-flex;align-items:center;gap:8px;padding:12px 26px;font-weight:600;font-size:16px;border-radius:50px;background:#A66B38;color:#fff;box-shadow:0 8px 20px rgba(166,107,56,.3);white-space:nowrap" style-hover="background:#7A4B24"><i class="bx bx-cookie"></i> Đặt bánh ngay</a>
+  </div>
+</nav>
+
+<section id="home" style="padding:64px 0 72px;background:linear-gradient(135deg,#F7F3E9 0%,#FFFFFF 100%);position:relative;overflow:hidden">
+  <div style="position:absolute;top:-100px;right:-100px;width:400px;height:400px;background:rgba(217,160,91,.14);border-radius:50%;filter:blur(50px)"></div>
+  <div style="max-width:1200px;margin:0 auto;padding:0 24px;display:grid;grid-template-columns:repeat(auto-fit,minmax(330px,1fr));gap:56px;align-items:center;position:relative">
+    <div>
+      <span style="display:inline-block;padding:8px 16px;background:rgba(166,107,56,.1);color:#A66B38;border-radius:20px;font-weight:600;font-size:14px;margin-bottom:22px">Ngon - Sạch - Tươi - An tâm</span>
+      <h1 style="font-size:54px;line-height:1.06;margin-bottom:14px">AnAn - <span style="color:#A66B38">Bếp Mẹ Nấu</span></h1>
+      <p style="font-size:23px;color:#7A4B24;font-weight:500;margin-bottom:18px">Gói an lành trong từng vị bánh</p>
+      <p style="font-size:18px;color:#666;margin-bottom:28px;max-width:92%">Thưởng thức bánh bò thốt nốt nướng thủ công thơm lừng, dai mềm hoàn hảo. Tươi mới 100% mỗi ngày, an toàn tuyệt đối từ nguyên liệu đến bàn ăn.</p>
+      <div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:26px">
+        <div style="display:flex;align-items:center;gap:6px;color:#F1C40F;font-size:18px"><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i></div>
+        <span style="font-size:15px;color:#5c5148"><strong style="color:#7A4B24">5.0</strong> từ khách quen, quán cafe &amp; khách đặt quà biếu</span>
+      </div>
+      <div style="display:flex;gap:16px;flex-wrap:wrap;margin-bottom:26px">
+        <a href="#menu" style="display:inline-flex;align-items:center;gap:10px;padding:17px 34px;font-size:18px;font-weight:700;border-radius:50px;background:#A66B38;color:#fff;box-shadow:0 10px 24px rgba(166,107,56,.34)" style-hover="background:#7A4B24;color:#fff">Đặt Bánh Tươi Hôm Nay <i class="bx bx-right-arrow-alt"></i></a>
+        <a href="#services" style="display:inline-flex;align-items:center;gap:8px;padding:17px 32px;font-size:18px;font-weight:600;border-radius:50px;border:2px solid #A66B38;color:#A66B38;background:#fff" style-hover="background:#A66B38;color:#fff">Tư Vấn Mua Sỉ &amp; Quà Tặng</a>
+      </div>
+      <div style="display:flex;gap:10px 26px;flex-wrap:wrap;font-size:14.5px;color:#5c5148">
+        <span style="display:flex;align-items:center;gap:7px"><i class="bx bx-check-shield" style="color:#2D4C3B;font-size:19px"></i> Không bán bánh qua ngày</span>
+        <span style="display:flex;align-items:center;gap:7px"><i class="bx bx-leaf" style="color:#2D4C3B;font-size:19px"></i> Không phụ gia công nghiệp</span>
+        <span style="display:flex;align-items:center;gap:7px"><i class="bx bxs-badge-check" style="color:#2D4C3B;font-size:19px"></i> Hút chân không miễn phí</span>
+      </div>
+    </div>
+    <div>
+      <div style="position:relative">
+        <div style="border-radius:24px;overflow:hidden;box-shadow:0 20px 40px rgba(166,107,56,.18)"><img src="images/hinh-02.jpg" alt="Bánh bò thốt nốt AnAn - Bếp Mẹ Nấu" style="width:100%"></div>
+        <div style="position:absolute;top:26px;left:-18px;background:rgba(255,255,255,.96);padding:12px 18px;border-radius:12px;font-weight:600;color:#7A4B24;display:flex;align-items:center;gap:8px;box-shadow:0 10px 30px rgba(0,0,0,.12);animation:float 4s ease-in-out infinite"><i class="bx bx-check-shield" style="color:#A66B38;font-size:20px"></i> 100% Tươi Mới</div>
+        <div style="position:absolute;bottom:96px;right:-18px;background:rgba(255,255,255,.96);padding:12px 18px;border-radius:12px;font-weight:600;color:#7A4B24;display:flex;align-items:center;gap:8px;box-shadow:0 10px 30px rgba(0,0,0,.12);animation:float 4s ease-in-out 2s infinite"><i class="bx bx-heart" style="color:#A66B38;font-size:20px"></i> Rễ tre chuẩn vị</div>
+        <a href="#menu" style="position:absolute;left:20px;right:20px;bottom:-26px;background:#fff;border-radius:16px;padding:16px 20px;box-shadow:0 16px 34px rgba(0,0,0,.14);display:flex;align-items:center;justify-content:space-between;gap:16px" style-hover="color:#333">
+          <span style="display:flex;flex-direction:column"><span style="font-size:12.5px;text-transform:uppercase;letter-spacing:1.4px;color:#9a8b7d;font-weight:600">Bán chạy nhất</span><strong style="font-size:17px;color:#7A4B24">Bánh bò thốt nốt nướng</strong></span>
+          <span style="display:flex;flex-direction:column;align-items:flex-end"><strong style="font-size:22px;color:#A66B38">từ 50.000đ</strong><span style="font-size:13px;color:#8a7a6c">/ hộp 300-350g</span></span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="menu" style="padding:86px 0 90px;background:#FAF9F6">
+  <div style="max-width:1200px;margin:0 auto;padding:0 24px">
+    <div style="text-align:center;margin-bottom:44px">
+      <span style="display:inline-block;color:#A66B38;font-weight:600;font-size:14px;text-transform:uppercase;letter-spacing:2px;margin-bottom:12px">Thực đơn Bếp AnAn</span>
+      <h2 style="font-size:40px;margin-bottom:18px">Sản Phẩm Chủ Lực</h2>
+      <p style="max-width:620px;margin:0 auto;color:#666;font-size:17px">Chọn vị bánh và cỡ hộp — chúng tôi nướng theo đơn của bạn trong ngày.</p>
+      <div style="height:4px;width:60px;background:#A66B38;margin:22px auto 0;border-radius:2px"></div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:28px;margin-bottom:34px">
+      <button type="button" onClick="{{ pickTraditional }}" style="position:relative;text-align:left;background:#fff;border:1px solid rgba(0,0,0,.06);border-radius:24px;overflow:hidden;padding:0;box-shadow:0 4px 10px rgba(0,0,0,.05)">
+        <div style="position:absolute;inset:0;border:3px solid #A66B38;border-radius:24px;pointer-events:none;z-index:2;display:{{ ringA }}"></div>
+        <div style="position:relative;height:250px;overflow:hidden">
+          <img src="images/hinh-04.jpg" alt="Bánh bò thốt nốt nướng truyền thống" style="width:100%;height:100%;object-fit:cover">
+          <span style="position:absolute;top:16px;right:16px;background:#A66B38;color:#fff;padding:6px 12px;border-radius:20px;font-size:12px;font-weight:700;text-transform:uppercase">Best Seller</span>
+          <span style="position:absolute;top:16px;left:16px;background:rgba(255,255,255,.95);color:#2D4C3B;padding:6px 12px;border-radius:20px;font-size:12px;font-weight:700;display:{{ ringA }}"><i class="bx bx-check"></i> Đang chọn</span>
+        </div>
+        <div style="padding:26px 28px 28px">
+          <h3 style="font-size:22px;margin-bottom:10px">Bánh Bò Thốt Nốt Nướng Truyền Thống</h3>
+          <p style="color:#666;font-size:15px;margin-bottom:18px">Đậm đà hương vị nguyên bản. Bánh rễ tre xốp nhẹ, mềm dai vừa phải, hòa quyện giữa vị ngọt thanh của thốt nốt và chút béo dịu của cốt dừa tự nhiên.</p>
+          <div style="display:flex;justify-content:space-between;align-items:center;padding:9px 0;border-bottom:1px dashed rgba(0,0,0,.1)"><span>Hộp nhỏ (300-350g)</span><strong style="color:#A66B38;font-size:18px">50.000đ</strong></div>
+          <div style="display:flex;justify-content:space-between;align-items:center;padding:9px 0"><span>Hộp lớn (500g)</span><strong style="color:#A66B38;font-size:18px">80.000đ</strong></div>
+        </div>
+      </button>
+
+      <button type="button" onClick="{{ pickCoconut }}" style="position:relative;text-align:left;background:#fff;border:1px solid rgba(0,0,0,.06);border-radius:24px;overflow:hidden;padding:0;box-shadow:0 4px 10px rgba(0,0,0,.05)">
+        <div style="position:absolute;inset:0;border:3px solid #A66B38;border-radius:24px;pointer-events:none;z-index:2;display:{{ ringB }}"></div>
+        <div style="position:relative;height:250px;overflow:hidden">
+          <img src="images/hinh-05.jpg" alt="Bánh bò thốt nốt nhân dừa rim" style="width:100%;height:100%;object-fit:cover">
+          <span style="position:absolute;top:16px;right:16px;background:#E74C3C;color:#fff;padding:6px 12px;border-radius:20px;font-size:12px;font-weight:700;text-transform:uppercase">Mới Lạ</span>
+          <span style="position:absolute;top:16px;left:16px;background:rgba(255,255,255,.95);color:#2D4C3B;padding:6px 12px;border-radius:20px;font-size:12px;font-weight:700;display:{{ ringB }}"><i class="bx bx-check"></i> Đang chọn</span>
+        </div>
+        <div style="padding:26px 28px 28px">
+          <h3 style="font-size:22px;margin-bottom:10px">Bánh Bò Thốt Nốt Nhân Dừa Rim</h3>
+          <p style="color:#666;font-size:15px;margin-bottom:18px">Trải nghiệm vị giác mới mẻ và gây nghiện. Lớp bánh nướng thơm lừng bao bọc phần nhân dừa rim dẻo dai, sần sật, nhai cực kỳ vui miệng.</p>
+          <div style="display:flex;justify-content:space-between;align-items:center;padding:9px 0;border-bottom:1px dashed rgba(0,0,0,.1)"><span>Hộp nhỏ (300-350g)</span><strong style="color:#A66B38;font-size:18px">55.000đ</strong></div>
+          <div style="display:flex;justify-content:space-between;align-items:center;padding:9px 0"><span>Hộp lớn (500-600g)</span><strong style="color:#A66B38;font-size:18px">90.000đ</strong></div>
+        </div>
+      </button>
+    </div>
+
+    <div style="background:#fff;border:1px solid rgba(166,107,56,.18);border-radius:24px;padding:30px 32px;box-shadow:0 14px 34px rgba(122,75,36,.1);display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:28px;align-items:end">
+      <div>
+        <span style="font-size:12.5px;text-transform:uppercase;letter-spacing:1.6px;color:#9a8b7d;font-weight:700">Bạn đang chọn</span>
+        <h3 style="font-size:21px;margin:8px 0 14px">{{ chosenName }}</h3>
+        <div style="display:flex;gap:10px;flex-wrap:wrap">
+          <button type="button" onClick="{{ pickSmall }}" style="position:relative;padding:11px 18px;border-radius:50px;border:1.5px solid rgba(122,75,36,.25);background:#FAF9F6;font-weight:600;font-size:15px;color:#7A4B24">Hộp nhỏ · {{ smallPrice }}<span style="position:absolute;inset:0;border:2.5px solid #A66B38;border-radius:50px;display:{{ ringSmall }}"></span></button>
+          <button type="button" onClick="{{ pickLarge }}" style="position:relative;padding:11px 18px;border-radius:50px;border:1.5px solid rgba(122,75,36,.25);background:#FAF9F6;font-weight:600;font-size:15px;color:#7A4B24">Hộp lớn · {{ largePrice }}<span style="position:absolute;inset:0;border:2.5px solid #A66B38;border-radius:50px;display:{{ ringLarge }}"></span></button>
+        </div>
+      </div>
+      <div>
+        <span style="font-size:12.5px;text-transform:uppercase;letter-spacing:1.6px;color:#9a8b7d;font-weight:700">Số hộp</span>
+        <div style="display:flex;align-items:center;gap:14px;margin-top:10px">
+          <button type="button" onClick="{{ dec }}" style="width:44px;height:44px;border-radius:50%;border:1.5px solid rgba(122,75,36,.25);background:#fff;font-size:22px;color:#7A4B24;line-height:1">−</button>
+          <strong style="font-size:24px;color:#7A4B24;min-width:34px;text-align:center">{{ qty }}</strong>
+          <button type="button" onClick="{{ inc }}" style="width:44px;height:44px;border-radius:50%;border:1.5px solid rgba(122,75,36,.25);background:#fff;font-size:22px;color:#7A4B24;line-height:1">+</button>
+          <span style="font-size:13.5px;color:#8a7a6c;max-width:150px">Từ 16 hộp áp dụng giá sỉ</span>
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:12px">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px dashed rgba(0,0,0,.12);padding-bottom:8px"><span style="color:#666">Tạm tính</span><strong style="font-size:27px;color:#A66B38">{{ totalText }}</strong></div>
+        <a href="https://forms.gle/afFfUAZzd5VWz7Hr7" target="_blank" style="display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:16px 26px;font-size:17px;font-weight:700;border-radius:50px;background:#A66B38;color:#fff;box-shadow:0 10px 24px rgba(166,107,56,.34)" style-hover="background:#7A4B24;color:#fff"><i class="bx bx-notepad"></i> Đặt {{ qty }} hộp qua Google Form</a>
+        <span style="font-size:13px;color:#8a7a6c;text-align:center">Không cần trả trước · Bếp gọi xác nhận trong 15 phút</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="combo" style="padding:86px 0">
+  <div style="max-width:1200px;margin:0 auto;padding:0 24px">
+    <div style="text-align:center;margin-bottom:40px">
+      <span style="display:inline-block;color:#A66B38;font-weight:600;font-size:14px;text-transform:uppercase;letter-spacing:2px;margin-bottom:12px">Mua theo nhu cầu</span>
+      <h2 style="font-size:40px;margin-bottom:18px">Bếp AnAn dành cho ai?</h2>
+      <div style="height:4px;width:60px;background:#A66B38;margin:0 auto;border-radius:2px"></div>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:28px">
+      <div style="background:#fff;border:1px solid rgba(0,0,0,.06);border-radius:24px;overflow:hidden;box-shadow:0 6px 18px rgba(0,0,0,.06);display:flex;flex-direction:column">
+        <img src="images/hinh-01.jpg" alt="Bánh cho gia đình và văn phòng" style="width:100%;height:190px;object-fit:cover">
+        <div style="padding:26px 28px 28px;display:flex;flex-direction:column;gap:14px;flex:1">
+          <div style="display:flex;align-items:center;gap:12px"><div style="width:44px;height:44px;background:#F7F3E9;color:#A66B38;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:24px"><i class="bx bx-home-heart"></i></div><h3 style="font-size:20px">Cho Gia Đình &amp; Văn Phòng</h3></div>
+          <p style="color:#666">Bữa xế gọn gàng, năng lượng sạch cho cả nhà và đồng nghiệp. Ăn ngon, lành tính, không lo đầy bụng.</p>
+          <div style="margin-top:auto;display:flex;align-items:center;justify-content:space-between;gap:12px;padding-top:8px"><strong style="color:#A66B38;font-size:18px">từ 50.000đ</strong><a href="#menu" style="display:inline-flex;align-items:center;gap:7px;font-weight:600;color:#A66B38">Chọn hộp bánh <i class="bx bx-right-arrow-alt"></i></a></div>
+        </div>
+      </div>
+      <div style="background:#fff;border:1px solid rgba(166,107,56,.3);border-radius:24px;overflow:hidden;box-shadow:0 14px 30px rgba(122,75,36,.12);display:flex;flex-direction:column">
+        <div style="position:relative"><img src="images/hinh-07.jpg" alt="Hộp quà biếu tặng" style="width:100%;height:190px;object-fit:cover"><span style="position:absolute;top:14px;left:14px;background:#2D4C3B;color:#fff;padding:6px 12px;border-radius:20px;font-size:12px;font-weight:700;text-transform:uppercase">Được đặt nhiều</span></div>
+        <div style="padding:26px 28px 28px;display:flex;flex-direction:column;gap:14px;flex:1">
+          <div style="display:flex;align-items:center;gap:12px"><div style="width:44px;height:44px;background:#F7F3E9;color:#A66B38;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:24px"><i class="bx bx-gift"></i></div><h3 style="font-size:20px">Quà Biếu Tặng Chỉn Chu</h3></div>
+          <p style="color:#666">Bánh được đặt trong hộp thiết kế thanh lịch, sang trọng. Thích hợp làm quà tặng tinh tế, mang đậm hương vị truyền thống.</p>
+          <div style="margin-top:auto;display:flex;align-items:center;justify-content:space-between;gap:12px;padding-top:8px"><strong style="color:#A66B38;font-size:18px">Hộp quà cao cấp</strong><a href="https://forms.gle/afFfUAZzd5VWz7Hr7" target="_blank" style="display:inline-flex;align-items:center;gap:7px;font-weight:600;color:#A66B38">Đặt hộp quà <i class="bx bx-right-arrow-alt"></i></a></div>
+        </div>
+      </div>
+      <div style="background:#fff;border:1px solid rgba(0,0,0,.06);border-radius:24px;overflow:hidden;box-shadow:0 6px 18px rgba(0,0,0,.06);display:flex;flex-direction:column">
+        <img src="images/hinh-08.jpg" alt="Cung cấp sỉ cho quán cafe" style="width:100%;height:190px;object-fit:cover">
+        <div style="padding:26px 28px 28px;display:flex;flex-direction:column;gap:14px;flex:1">
+          <div style="display:flex;align-items:center;gap:12px"><div style="width:44px;height:44px;background:#F7F3E9;color:#A66B38;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:24px"><i class="bx bx-store-alt"></i></div><h3 style="font-size:20px">Đối Tác Sỉ / Quán Cafe</h3></div>
+          <p style="color:#666">Mảnh ghép hoàn hảo cho menu đồ uống. Cung cấp sỉ linh hoạt từ 16 hộp, hỗ trợ giữ form bánh đẹp để tối ưu kinh doanh.</p>
+          <div style="margin-top:auto;display:flex;align-items:center;justify-content:space-between;gap:12px;padding-top:8px"><strong style="color:#A66B38;font-size:18px">Sỉ từ 16 hộp</strong><a href="tel:0918103741" style="display:inline-flex;align-items:center;gap:7px;font-weight:600;color:#A66B38">Nhận báo giá sỉ <i class="bx bx-right-arrow-alt"></i></a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="cam-ket" style="padding:90px 0;background:#7A4B24;color:#fff;overflow:hidden">
+  <div style="max-width:1200px;margin:0 auto;padding:0 24px;display:grid;grid-template-columns:repeat(auto-fit,minmax(330px,1fr));gap:56px;align-items:center">
+    <div>
+      <span style="display:inline-block;color:#fff;font-weight:600;font-size:14px;text-transform:uppercase;letter-spacing:2px;margin-bottom:12px">Lời Cam Kết Vàng</span>
+      <h2 style="font-size:40px;color:#fff;margin-bottom:22px">Tươi mới mỗi ngày.<br>Minh bạch từng nguyên liệu.</h2>
+      <p style="font-size:22px;font-weight:300;line-height:1.6;margin-bottom:22px;color:#F7F3E9">Tại <strong>AnAn Bếp Mẹ Nấu</strong>, chúng tôi thực hiện việc quản lý số Lot của từng loại nguyên vật liệu. Trên mỗi hộp bánh đều có ghi số Lot nhằm mục đích truy xuất ngày và lô sản xuất.</p>
+      <p style="color:rgba(255,255,255,.85);margin-bottom:30px">Việc này giúp Bếp nắm rõ chính xác các lô nguyên liệu nào đã được sử dụng cho từng lô bánh, đảm bảo chất lượng đồng đều và an toàn tuyệt đối cho thực khách.</p>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px;margin-bottom:30px">
+        <div style="display:flex;gap:16px">
+          <div style="width:48px;height:48px;background:rgba(255,255,255,.1);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:24px;color:#D9A05B;flex-shrink:0"><i class="bx bx-calendar-check"></i></div>
+          <div><h4 style="color:#fff;margin-bottom:4px">100% bánh nướng tươi mới mỗi ngày</h4><p style="color:rgba(255,255,255,.8)">Tuyệt đối KHÔNG bán bánh qua ngày.</p></div>
+        </div>
+        <div style="display:flex;gap:16px">
+          <div style="width:48px;height:48px;background:rgba(255,255,255,.1);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:24px;color:#D9A05B;flex-shrink:0"><i class="bx bx-leaf"></i></div>
+          <div><h4 style="color:#fff;margin-bottom:4px">Tuyệt đối không dùng phụ gia công nghiệp</h4><p style="color:rgba(255,255,255,.8)">Hoàn toàn tự nhiên, an toàn cho sức khỏe.</p></div>
+        </div>
+      </div>
+      <a href="#menu" style="display:inline-flex;align-items:center;gap:10px;padding:15px 30px;font-size:17px;font-weight:700;border-radius:50px;background:#fff;color:#7A4B24" style-hover="background:#F7F3E9;color:#7A4B24">Đặt mẻ bánh hôm nay <i class="bx bx-right-arrow-alt"></i></a>
+    </div>
+    <div>
+      <div style="background:#fff;border-radius:24px;padding:38px;color:#333;box-shadow:0 30px 60px rgba(0,0,0,.3);transform:rotate(2deg)" style-hover="transform:rotate(0deg)">
+        <div style="border-bottom:1px solid rgba(0,0,0,.05);margin-bottom:15px;padding-bottom:10px">
+          <div style="font-weight:800;font-size:20px;color:#7A4B24"><i class="bx bx-time" style="color:#A66B38;font-size:1.2rem"></i> <strong>Hạn sử dụng &amp; Bảo quản</strong></div>
+        </div>
+        <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px">
+          <li style="display:flex;align-items:center;gap:12px;font-weight:500;padding:12px 0;border-bottom:1px dashed rgba(0,0,0,.1)"><i class="bx bx-check-circle" style="color:#2D4C3B;font-size:20px"></i> <span><strong>Nhiệt độ thường:</strong> Dùng trong vòng 2 ngày (48 giờ) từ ngày sản xuất.</span></li>
+          <li style="display:flex;align-items:center;gap:12px;font-weight:500;padding:12px 0"><i class="bx bx-check-circle" style="color:#2D4C3B;font-size:20px"></i> <span><strong>Ngăn mát tủ lạnh:</strong> Giữ được trong vòng 5 ngày.</span></li>
+        </ul>
+        <div style="background:rgba(221,161,94,.1);border-left:3px solid #A66B38;padding:12px;margin-top:15px;border-radius:4px;font-size:.95rem;line-height:1.5;color:#333">
+          <strong>Lưu ý khi bảo quản lạnh:</strong><br>
+          Khi lấy khỏi tủ lạnh, cần dùng lò vi sóng làm nóng lại để bánh thơm ngon như mới. Sau khi làm nóng, vui lòng <strong>dùng ngay</strong> và tuyệt đối <strong>không tái cấp lạnh</strong>.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services" style="padding:86px 0;background-image:linear-gradient(rgba(255,255,255,.92),rgba(255,255,255,.92)),url('images/hero.png');background-size:cover;background-position:center">
+  <div style="max-width:1200px;margin:0 auto;padding:0 24px">
+    <div style="max-width:860px;margin:0 auto;background:#fff;padding:52px;border-radius:24px;box-shadow:0 20px 40px rgba(166,107,56,.15)">
+      <h2 style="font-size:36px;margin-bottom:16px">Dịch Vụ Hỗ Trợ Tận Tâm</h2>
+      <p style="color:#666;font-size:17px">Đập tan mọi rào cản về vận chuyển và bảo quản, Bếp AnAn luôn có giải pháp để những chiếc bánh đến tay bạn trong trạng thái hoàn hảo nhất.</p>
+      <ul style="list-style:none;margin:30px 0 0;padding:0;display:grid;gap:20px">
+        <li style="display:flex;align-items:flex-start;gap:16px;font-size:17.5px;background:#FAF9F6;border-radius:16px;padding:18px 20px"><i class="bx bxs-badge-check" style="color:#A66B38;font-size:28px;margin-top:2px"></i> <span><strong>Hỗ trợ hút chân không miễn phí:</strong> Giữ trọn độ ẩm, mùi vị, an toàn khi mang đi xa hoặc gửi tặng các tỉnh.</span></li>
+        <li style="display:flex;align-items:flex-start;gap:16px;font-size:17.5px;background:#FAF9F6;border-radius:16px;padding:18px 20px"><i class="bx bxs-badge-check" style="color:#A66B38;font-size:28px;margin-top:2px"></i> <span><strong>Đóng gói linh hoạt:</strong> Hộp tiêu chuẩn sạch sẽ, hoặc hộp quà cao cấp theo yêu cầu.</span></li>
+        <li style="display:flex;align-items:flex-start;gap:16px;font-size:17.5px;background:#FAF9F6;border-radius:16px;padding:18px 20px"><i class="bx bxs-badge-check" style="color:#A66B38;font-size:28px;margin-top:2px"></i> <span><strong>Chính sách sỉ ưu đãi:</strong> Chiết khấu tốt, hỗ trợ tư vấn set up bánh cho quán nước / sự kiện teabreak.</span></li>
+      </ul>
+      <div style="display:flex;gap:14px;flex-wrap:wrap;margin-top:30px">
+        <a href="tel:0918103741" style="display:inline-flex;align-items:center;gap:9px;padding:15px 30px;font-size:17px;font-weight:700;border-radius:50px;background:#A66B38;color:#fff;box-shadow:0 10px 24px rgba(166,107,56,.3)" style-hover="background:#7A4B24;color:#fff"><i class="bx bxs-phone-call"></i> Gọi tư vấn sỉ: 0918 103 741</a>
+        <a href="#menu" style="display:inline-flex;align-items:center;gap:8px;padding:15px 28px;font-size:17px;font-weight:600;border-radius:50px;border:2px solid #A66B38;color:#A66B38" style-hover="background:#A66B38;color:#fff">Xem sản phẩm</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="khach-hang" style="padding:86px 0;background:#FAF9F6">
+  <div style="max-width:1200px;margin:0 auto;padding:0 24px">
+    <div style="text-align:center">
+      <span style="display:inline-block;color:#A66B38;font-weight:600;font-size:14px;text-transform:uppercase;letter-spacing:2px;margin-bottom:12px">Khách hàng nói gì?</span>
+      <h2 style="font-size:40px;margin-bottom:24px">Niềm Vui Từ Sự An Tâm</h2>
+      <div style="height:4px;width:60px;background:#A66B38;margin:0 auto 40px;border-radius:2px"></div>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:28px">
+      <div style="background:#fff;padding:36px;border-radius:24px;box-shadow:0 6px 16px rgba(0,0,0,.05);position:relative">
+        <div style="position:absolute;top:20px;right:30px;font-size:80px;color:#F7F3E9;font-family:serif;line-height:1">"</div>
+        <div style="color:#F1C40F;margin-bottom:18px"><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i></div>
+        <p style="font-style:italic;color:#666;margin-bottom:26px;position:relative;z-index:1">"Bánh ngon dã man! Rễ tre nhiều, bánh mềm dai mà không bị khô. Cái vị ngọt thanh của thốt nốt ăn rất dễ chịu, không gắt. Có cái mã số lô trên hộp nhìn uy tín hẳn, mua cho mấy nhóc ở nhà ăn rất yên tâm."</p>
+        <div><strong style="display:block;color:#7A4B24;font-size:18px">Khánh Vân Q5</strong><span style="font-size:14px;color:#666">Chuyên viên tư vấn tâm lý</span></div>
+      </div>
+      <div style="background:#fff;padding:36px;border-radius:24px;box-shadow:0 6px 16px rgba(0,0,0,.05);position:relative">
+        <div style="position:absolute;top:20px;right:30px;font-size:80px;color:#F7F3E9;font-family:serif;line-height:1">"</div>
+        <div style="color:#F1C40F;margin-bottom:18px"><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i></div>
+        <p style="font-style:italic;color:#666;margin-bottom:26px;position:relative;z-index:1">"Khách quán mình khen bánh bò nhân dừa rim quá trời. Dừa sần sật nhai rất đã, kết hợp với trà sen hay cafe đen đều hợp. Bếp AnAn hút chân không rất kỹ nên bánh giữ form tốt, bảo quản dễ."</p>
+        <div><strong style="display:block;color:#7A4B24;font-size:18px">Chị Cát</strong><span style="font-size:14px;color:#666">Chủ team chăm sóc sức khỏe Phú Nhuận, TP.HCM</span></div>
+      </div>
+      <div style="background:#fff;padding:36px;border-radius:24px;box-shadow:0 6px 16px rgba(0,0,0,.05);position:relative">
+        <div style="position:absolute;top:20px;right:30px;font-size:80px;color:#F7F3E9;font-family:serif;line-height:1">"</div>
+        <div style="color:#F1C40F;margin-bottom:18px"><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i></div>
+        <p style="font-style:italic;color:#666;margin-bottom:26px;position:relative;z-index:1">"Mua hộp bánh biếu mẹ chồng mà cụ khen nức nở bảo đúng cái vị ngày xưa. Hộp bánh chỉn chu, cầm nặng tay. Lần sau sẽ đặt thêm bánh bò mời khách đến nhà."</p>
+        <div><strong style="display:block;color:#7A4B24;font-size:18px">Chị Hè</strong><span style="font-size:14px;color:#666">Chủ quán cơm đường Tám Danh, Q.8, TP.HCM</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="story" style="padding:86px 0">
+  <div style="max-width:1200px;margin:0 auto;padding:0 24px">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:52px;align-items:center">
+      <div>
+        <span style="display:inline-block;color:#A66B38;font-weight:600;font-size:14px;text-transform:uppercase;letter-spacing:2px;margin-bottom:12px">Câu chuyện bếp</span>
+        <h2 style="font-size:38px;margin-bottom:20px">Từ căn bếp nhỏ,<br>gửi trao sự an tâm.</h2>
+        <div style="height:4px;width:60px;background:#A66B38;margin-bottom:26px;border-radius:2px"></div>
+        <p style="font-size:18.5px;line-height:1.8;color:#666;margin-bottom:20px">Không ồn ào hay phô trương, <strong style="color:#7A4B24">Bếp AnAn</strong> ra đời từ tình yêu với chiếc bánh quê truyền thống — nơi có mùi thơm dịu của đường thốt nốt và vị béo ngậy tự nhiên từ nước cốt dừa tươi.</p>
+        <p style="font-size:18.5px;line-height:1.8;color:#666">Chúng tôi tin rằng, một chiếc bánh ngon thực sự không chỉ nằm ở hương vị, mà còn ở cảm giác nhẹ nhõm, an tâm khi thưởng thức. Từng mẻ bột tại AnAn đều được ủ thủ công tỉ mỉ để tạo nên những đường "rễ tre" đẹp mắt, vị ngọt thanh tao, ăn hoài không ngán.</p>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+        <img src="images/hinh-01.jpg" alt="Quá trình làm bánh" style="width:100%;height:220px;object-fit:cover;border-radius:20px">
+        <img src="images/hinh-03.jpg" alt="Bánh nướng chín trong lò" style="width:100%;height:220px;object-fit:cover;border-radius:20px;margin-top:24px">
+        <img src="images/hinh-07.jpg" alt="Sản phẩm Bếp AnAn" style="width:100%;height:220px;object-fit:cover;border-radius:20px">
+        <img src="images/hinh-08.jpg" alt="Bánh bò thơm ngon" style="width:100%;height:220px;object-fit:cover;border-radius:20px;margin-top:24px">
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer id="order" style="background:#7A4B24;color:#fff;padding-top:86px">
+  <div style="max-width:1200px;margin:0 auto;padding:0 24px">
+    <div style="text-align:center;margin-bottom:56px">
+      <h2 style="color:#fff;margin-bottom:14px;font-size:40px">Bạn đã sẵn sàng nếm thử mẻ bánh tươi nhất hôm nay?</h2>
+      <p style="color:rgba(255,255,255,.85);margin-bottom:28px;font-size:17px">Đặt trước 11:00 sáng để nhận bánh chiều cùng ngày (15:00–19:00).</p>
+      <div style="display:flex;justify-content:center;gap:18px;flex-wrap:wrap">
+        <a href="https://forms.gle/afFfUAZzd5VWz7Hr7" target="_blank" style="display:inline-flex;align-items:center;gap:9px;padding:17px 34px;font-size:18px;font-weight:700;border-radius:50px;background:#A66B38;color:#fff;box-shadow:0 10px 24px rgba(0,0,0,.25)" style-hover="background:#fff;color:#7A4B24"><i class="bx bx-notepad"></i> Đặt Bánh Qua Google Form</a>
+        <a href="tel:0918103741" style="display:inline-flex;align-items:center;gap:9px;padding:17px 34px;font-size:18px;font-weight:600;border-radius:50px;border:2px solid rgba(255,255,255,.5);color:#fff" style-hover="background:rgba(255,255,255,.12);color:#fff"><i class="bx bxs-phone-call"></i> Gọi Hotline: 0918 103 741</a>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:36px 40px;padding-top:38px;border-top:1px solid rgba(255,255,255,.12)">
+      <div style="display:flex;flex-direction:column;gap:14px">
+        <div style="display:flex;align-items:center;gap:12px">
+          <img src="images/logo_v2.png" alt="AnAn - Bếp Mẹ Nấu" style="height:46px;width:auto;background:#fff;border-radius:50%">
+          <div><h3 style="color:#fff;font-size:19px;font-weight:800;line-height:1.25">AnAn - <span style="color:#D9A05B">Bếp Mẹ Nấu</span></h3><p style="color:rgba(255,255,255,.7);font-size:13.5px">Gói an lành trong từng vị bánh</p></div>
+        </div>
+        <div style="display:flex;gap:10px">
+          <a href="https://www.facebook.com/profile.php?id=61591733211255" target="_blank" title="Facebook" style="width:38px;height:38px;border-radius:50%;background:rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center;font-size:21px;color:#fff" style-hover="background:#A66B38"><i class="bx bxl-facebook-circle"></i></a>
+          <a href="#" title="Instagram" style="width:38px;height:38px;border-radius:50%;background:rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center;font-size:21px;color:#fff" style-hover="background:#A66B38"><i class="bx bxl-instagram"></i></a>
+          <a href="https://forms.gle/afFfUAZzd5VWz7Hr7" target="_blank" title="Đặt bánh" style="width:38px;height:38px;border-radius:50%;background:rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center;font-size:21px;color:#fff" style-hover="background:#A66B38"><i class="bx bx-message-rounded-dots"></i></a>
+        </div>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:11px">
+        <span style="font-size:11.5px;text-transform:uppercase;letter-spacing:1.6px;color:#D9A05B;font-weight:700">Liên hệ &amp; Đặt bánh</span>
+        <a href="tel:0918103741" style="display:flex;align-items:center;gap:9px;color:#fff;font-weight:700;font-size:17px" style-hover="color:#D9A05B"><i class="bx bxs-phone-call" style="color:#D9A05B;font-size:18px"></i> 0918 103 741</a>
+        <a href="https://forms.gle/afFfUAZzd5VWz7Hr7" target="_blank" style="display:flex;align-items:center;gap:9px;color:rgba(255,255,255,.85);font-size:14.5px" style-hover="color:#D9A05B"><i class="bx bx-notepad" style="color:#D9A05B;font-size:17px"></i> Đặt qua Google Form</a>
+        <p style="display:flex;align-items:flex-start;gap:9px;color:rgba(255,255,255,.75);font-size:14.5px;line-height:1.5"><i class="bx bx-map" style="color:#D9A05B;font-size:17px;margin-top:2px"></i> <span>Số 55, Đường Lê Quyên,<br>Phường Chánh Hưng, TP.HCM</span></p>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:11px">
+        <span style="font-size:11.5px;text-transform:uppercase;letter-spacing:1.6px;color:#D9A05B;font-weight:700">Giờ giao bánh</span>
+        <div style="display:flex;justify-content:space-between;gap:14px;padding-bottom:9px;border-bottom:1px dashed rgba(255,255,255,.18)">
+          <span style="color:#fff;font-weight:600;font-size:14.5px">9:00 – 12:00</span>
+          <span style="color:rgba(255,255,255,.7);font-size:13.5px;text-align:right">đặt trước 19:00<br>tối hôm trước</span>
+        </div>
+        <div style="display:flex;justify-content:space-between;gap:14px">
+          <span style="color:#fff;font-weight:600;font-size:14.5px">15:00 – 19:00</span>
+          <span style="color:rgba(255,255,255,.7);font-size:13.5px;text-align:right">đặt trước 11:00<br>sáng cùng ngày</span>
+        </div>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:9px">
+        <span style="font-size:11.5px;text-transform:uppercase;letter-spacing:1.6px;color:#D9A05B;font-weight:700">Khám phá</span>
+        <a href="#menu" style="color:rgba(255,255,255,.85);font-size:14.5px" style-hover="color:#D9A05B">Sản phẩm &amp; giá</a>
+        <a href="#combo" style="color:rgba(255,255,255,.85);font-size:14.5px" style-hover="color:#D9A05B">Combo &amp; quà tặng</a>
+        <a href="#services" style="color:rgba(255,255,255,.85);font-size:14.5px" style-hover="color:#D9A05B">Mua sỉ từ 16 hộp</a>
+        <a href="#cam-ket" style="color:rgba(255,255,255,.85);font-size:14.5px" style-hover="color:#D9A05B">Cam kết &amp; bảo quản</a>
+        <a href="#khach-hang" style="color:rgba(255,255,255,.85);font-size:14.5px" style-hover="color:#D9A05B">Đánh giá khách hàng</a>
+      </div>
+    </div>
+
+    <div style="margin-top:32px;padding:16px 0 26px;border-top:1px solid rgba(255,255,255,.12);display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;color:rgba(255,255,255,.55);font-size:13.5px">
+      <p>© 2026 Bếp AnAn. All rights reserved. Designed with love.</p>
+      <p style="display:flex;align-items:center;gap:7px"><i class="bx bx-check-shield" style="font-size:16px"></i> Bánh nướng tươi mỗi ngày · Không phụ gia công nghiệp</p>
+    </div>
+  </div>
+</footer>
+
+<div style="position:fixed;left:0;right:0;bottom:0;z-index:1200;background:rgba(255,255,255,.97);backdrop-filter:blur(10px);border-top:1px solid rgba(0,0,0,.08);box-shadow:0 -6px 24px rgba(0,0,0,.08)">
+  <div style="max-width:1200px;margin:0 auto;padding:12px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap">
+    <div style="display:flex;align-items:center;gap:14px;min-width:0">
+      <img src="images/logo_v2.png" alt="" style="height:40px;width:auto">
+      <div style="display:flex;flex-direction:column;min-width:0"><strong style="color:#7A4B24;font-size:15.5px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">{{ chosenName }}</strong><span style="font-size:13px;color:#8a7a6c">{{ qty }} × {{ sizeLabel }} · <strong style="color:#A66B38">{{ totalText }}</strong></span></div>
+    </div>
+    <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap">
+      <a href="tel:0918103741" style="display:inline-flex;align-items:center;gap:8px;padding:12px 20px;border-radius:50px;border:2px solid #A66B38;color:#A66B38;font-weight:600" style-hover="background:#A66B38;color:#fff"><i class="bx bxs-phone-call"></i> Gọi Zalo</a>
+      <a href="https://forms.gle/afFfUAZzd5VWz7Hr7" target="_blank" style="display:inline-flex;align-items:center;gap:8px;padding:13px 26px;border-radius:50px;background:#A66B38;color:#fff;font-weight:700;box-shadow:0 8px 20px rgba(166,107,56,.32)" style-hover="background:#7A4B24;color:#fff"><i class="bx bx-cookie"></i> Đặt bánh ngay</a>
+    </div>
+  </div>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{}">
+class Component extends DCLogic {
+  state = { product: 0, size: 0, qty: 1 };
+  get data() {
+    return [
+      { name: 'Bánh Bò Thốt Nốt Nướng Truyền Thống', small: 50000, large: 80000, smallLabel: 'Hộp nhỏ (300-350g)', largeLabel: 'Hộp lớn (500g)' },
+      { name: 'Bánh Bò Thốt Nốt Nhân Dừa Rim', small: 55000, large: 90000, smallLabel: 'Hộp nhỏ (300-350g)', largeLabel: 'Hộp lớn (500-600g)' }
+    ][this.state.product];
+  }
+  fmt(n) { return n.toLocaleString('vi-VN') + 'đ'; }
+  renderVals() {
+    const p = this.data, s = this.state;
+    const unit = s.size === 0 ? p.small : p.large;
+    return {
+      chosenName: p.name,
+      smallPrice: this.fmt(p.small),
+      largePrice: this.fmt(p.large),
+      sizeLabel: s.size === 0 ? p.smallLabel : p.largeLabel,
+      qty: s.qty,
+      totalText: this.fmt(unit * s.qty),
+      ringA: s.product === 0 ? 'block' : 'none',
+      ringB: s.product === 1 ? 'block' : 'none',
+      ringSmall: s.size === 0 ? 'block' : 'none',
+      ringLarge: s.size === 1 ? 'block' : 'none',
+      pickTraditional: () => this.setState({ product: 0 }),
+      pickCoconut: () => this.setState({ product: 1 }),
+      pickSmall: () => this.setState({ size: 0 }),
+      pickLarge: () => this.setState({ size: 1 }),
+      inc: () => this.setState(st => ({ qty: Math.min(99, st.qty + 1) })),
+      dec: () => this.setState(st => ({ qty: Math.max(1, st.qty - 1) }))
+    };
+  }
+}
+</script>
+</body>
+</html>
