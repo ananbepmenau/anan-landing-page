@@ -1,0 +1,215 @@
+.hero {
+  padding: 64px 0 72px;
+  background: linear-gradient(135deg, #f7f3e9 0%, #ffffff 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.glow {
+  position: absolute;
+  top: -100px;
+  right: -100px;
+  width: 400px;
+  height: 400px;
+  background: rgba(217, 160, 91, 0.14);
+  border-radius: 50%;
+  filter: blur(50px);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  gap: 56px;
+  align-items: center;
+  position: relative;
+}
+
+.badge {
+  display: inline-block;
+  padding: 8px 16px;
+  background: rgba(166, 107, 56, 0.1);
+  color: var(--color-primary);
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 22px;
+}
+
+.title {
+  font-size: 54px;
+  line-height: 1.06;
+  margin-bottom: 14px;
+}
+
+.titleAccent {
+  color: var(--color-primary);
+}
+
+.subtitle {
+  font-size: 23px;
+  color: var(--color-heading);
+  font-weight: 500;
+  margin-bottom: 18px;
+}
+
+.lead {
+  font-size: 18px;
+  color: var(--color-text-muted);
+  margin-bottom: 28px;
+  max-width: 92%;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-bottom: 26px;
+}
+
+.stars {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--color-star);
+  font-size: 18px;
+}
+
+.ratingText {
+  font-size: 15px;
+  color: #5c5148;
+}
+
+.ratingScore {
+  color: var(--color-heading);
+}
+
+.ctaRow {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 26px;
+}
+
+.trustRow {
+  display: flex;
+  gap: 10px 26px;
+  flex-wrap: wrap;
+  font-size: 14.5px;
+  color: #5c5148;
+}
+
+.trustItem {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.trustIcon {
+  color: var(--color-dark-green);
+  font-size: 19px;
+}
+
+.imageWrap {
+  position: relative;
+}
+
+.imageFrame {
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(166, 107, 56, 0.18);
+}
+
+.heroImg {
+  width: 100%;
+  height: auto;
+}
+
+.floatCard {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.96);
+  padding: 12px 18px;
+  border-radius: 12px;
+  font-weight: 600;
+  color: var(--color-heading);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  animation: float 4s ease-in-out infinite;
+}
+
+.floatCard i {
+  color: var(--color-primary);
+  font-size: 20px;
+}
+
+.floatFresh {
+  top: 26px;
+  left: -18px;
+}
+
+.floatBamboo {
+  bottom: 96px;
+  right: -18px;
+  animation-delay: 2s;
+}
+
+.priceCard {
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  bottom: -26px;
+  background: #fff;
+  border-radius: 16px;
+  padding: 16px 20px;
+  box-shadow: 0 16px 34px rgba(0, 0, 0, 0.14);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.priceCard:hover {
+  color: var(--color-text);
+}
+
+.priceLabelCol {
+  display: flex;
+  flex-direction: column;
+}
+
+.priceEyebrow {
+  font-size: 12.5px;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  color: var(--color-text-soft);
+  font-weight: 600;
+}
+
+.priceName {
+  font-size: 17px;
+  color: var(--color-heading);
+}
+
+.priceValueCol {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.priceValue {
+  font-size: 22px;
+  color: var(--color-primary);
+}
+
+.priceUnit {
+  font-size: 13px;
+  color: var(--color-text-soft);
+}
+
+@media (max-width: 640px) {
+  .title {
+    font-size: 38px;
+  }
+}

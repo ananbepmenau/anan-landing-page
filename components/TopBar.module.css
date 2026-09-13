@@ -1,0 +1,33 @@
+.bar {
+  background: var(--color-dark-green);
+  color: #fff;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px 28px;
+  padding: 9px 24px;
+  align-items: center;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #8fd6a6;
+  animation: pulse 1.8s ease-in-out infinite;
+}
+
+.phoneLink {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: #fff;
+  font-weight: 600;
+}
