@@ -1,0 +1,43 @@
+.section {
+  padding: 86px 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 52px;
+  align-items: center;
+}
+
+.title {
+  font-size: 38px;
+  margin-bottom: 20px;
+}
+
+.divider {
+  margin: 0 0 26px;
+}
+
+.paragraph {
+  font-size: 18.5px;
+  line-height: 1.8;
+  color: var(--color-text-muted);
+  margin-bottom: 20px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.photo {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.photoOffset {
+  margin-top: 24px;
+}
